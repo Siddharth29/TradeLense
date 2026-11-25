@@ -1,0 +1,11 @@
+{
+  "worker_source_sha256": "0bcec790f9d7a4f569db85f353c84f5b650350a6a11c0bc725ec4228ec77910c",
+  "source_sha256": {
+    "apps/backend/agents/runner.py": "af07666d6263fb1206d7f69ed645abcf4c38c1cb4e207eafb5821334f961d23c",
+    "packages/core/simple_sandbox.py": "94bf81df4723442ab73fbc36fe1c59d7072f02f0d88cbb43ecb5b7a3db241f93"
+  },
+  "original_lines": {
+    "apps/backend/agents/runner.py": 6068,
+    "packages/core/simple_sandbox.py": 311
+  }
+}

@@ -1,0 +1,50 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+config/*.local.json
+config/*credentials*.json
+
+# Runtime and broker data
+data/operational/
+data/raw/
+data/audit/
+data/processed/*.csv
+results/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend
+node_modules/
+dist/
+coverage/
+apps/frontend/cypress/screenshots/
+apps/frontend/cypress/videos/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch and generated analysis
+tmp_analysis/
+pytest_summary.txt
+
+# Local broker account exports
+/Trade report-*.pdf

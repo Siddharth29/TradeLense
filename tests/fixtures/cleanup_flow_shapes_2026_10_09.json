@@ -1,0 +1,735 @@
+{
+  "schema_version": 1,
+  "purpose": "Sanitized historical event shapes; independent samples, not a joined trade lifecycle.",
+  "samples": [
+    {
+      "stage": "startup",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 1,
+        "line_sha256": "178e7665717ef4e36c2772bf10ef6af362b4686253466551d2e9e534750443fc"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "startup",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 1333,
+        "line_sha256": "6f9b1dc7e18ee524b54b641e652cf00c42317b73f508cf90ad4bd58a8fee0234"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "startup",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 2477,
+        "line_sha256": "6c29f17ffe3a977a6945f918f30be111699370ea1381f1e6c06a6be8e19a1a43"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "decision",
+      "event": "gpt_response",
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": true,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 88,
+        "line_sha256": "ca67b90a133f738e9547cd74550eb81dab340a64b626e015f6c0579355ca1e41"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "decision",
+      "event": "gpt_response",
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": true,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 104,
+        "line_sha256": "34c5ea26b3423e58aaed4327e0cd76a81473659e1218603f1e9916cb9fadc816"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "decision",
+      "event": "cycle",
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": true,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": true,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 105,
+        "line_sha256": "a351a2ae1f3c3985a7fa33ac91f3f89066b67ed48d506d68a35a04cffe81b5bb"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "armed",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 112,
+        "line_sha256": "a01c412f24b3435c04a86c4a23b0e8652140bda00b176f21cd163e29e904f393"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "armed",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 595,
+        "line_sha256": "66df540c3fc37ebd3a1780bc2d16687d01fdfe5c2820f1e5f271e9c7bbb822d1"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "armed",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 612,
+        "line_sha256": "60a9ea5b37e76a4b571a9a2f34bacace4294243976fcea783fbf63570a5ccafa"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "fill",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 2870,
+        "line_sha256": "639ff157fdecfe4315fc7c12c88ff0bbbaf19824c82e27bb31c117a34f68e86c"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "fill",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": true,
+        "strategy_id": true,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": true
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 2873,
+        "line_sha256": "572b47208de548c210d6b7dd69c73f4c185c9ee1835f74bc34f73eada6a47e21"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "fill",
+      "event": "trade_open",
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": true,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": true,
+        "strategy_id": false,
+        "position_ticket": true,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": true,
+        "exit_reason": true,
+        "entry_price": true,
+        "exit_price": true
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 2875,
+        "line_sha256": "340ae4d422f7cee4e4e982779874e5a3de8af113004dfe1e41d86dc6aa1fb9e6"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "partial",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-07.log",
+        "line": 7207,
+        "line_sha256": "33cb697974667784357b242698e9245b2e99ec1ae8255a502cf946a3e4fe5c99"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "partial",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-08.log",
+        "line": 3672,
+        "line_sha256": "4846df83fd9a7f4a7545fb9b44b0918e152a8d93f939cc047da5053d2fb485bf"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "partial",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-08.log",
+        "line": 8650,
+        "line_sha256": "f7e7628e667adcb309dffd038ea9860d6c79de4d403394d53e59f51bd8fa2248"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "exit",
+      "event": "trade_exit",
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": true,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": true,
+        "trade_id": true,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": true,
+        "exit_reason": true,
+        "entry_price": true,
+        "exit_price": true
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 3383,
+        "line_sha256": "ae0db97da65593e122b31c38c33f068aa0dbcd4201f80edb821f4c9fe3863cf4"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "exit",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 3384,
+        "line_sha256": "b17f65102cfc437aafc61291abde892d9f03b6317c2b716b7789b39e905ad35d"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "exit",
+      "event": "trade_exit",
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": true,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": true,
+        "trade_id": true,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": true,
+        "exit_reason": true,
+        "entry_price": true,
+        "exit_price": true
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 4605,
+        "line_sha256": "a847e09d0720e4d468dce3d4d0b21059af1687bd72b930f8e5ccb24d96a8304a"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "expiry",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 4463,
+        "line_sha256": "9954d32dd102b34cc3b35fa4b1c2a2d7cc2215d8677747b84bc1714d3fce9f2d"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "expiry",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": true,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 4464,
+        "line_sha256": "21509eb7e8663b2ff8b0e9325a15e7b72d6f343d6f2832a1811468b08897536e"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "expiry",
+      "event": "strategy_expiry",
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": true,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": true,
+        "strategy_id": true,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-06.log",
+        "line": 4466,
+        "line_sha256": "95764a58a8bdabdce172bafc51e9917863ec641ae17167400a88896429ed4e9e"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "recovery",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-10.log",
+        "line": 14830,
+        "line_sha256": "cd8f5f0af62ee8d2f941e50b18357ae4df409062f85a711f1502b7d751389b96"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "recovery",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-13.log",
+        "line": 391,
+        "line_sha256": "9b99a0ad72d184125b501be4112a413c244fa96d267dfe88f0890fd4916ca8a9"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "recovery",
+      "event": null,
+      "level": "INFO",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-14.log",
+        "line": 1887,
+        "line_sha256": "a2552ce43f3480c4d4eae3dc3da567740c4e5a2abea6dbfc0b8cf9213c936b9d"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "connection_failure",
+      "event": null,
+      "level": "ERROR",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": false,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-10.log",
+        "line": 13055,
+        "line_sha256": "98eb42091188498ea6b696fd0d6ccabf326ae10a44caf5bb457e28a8e07a836d"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "connection_failure",
+      "event": null,
+      "level": "ERROR",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-10.log",
+        "line": 13058,
+        "line_sha256": "daa139994a17edd2fc133af6c61173b507d85882fe705147c2585c9f77b8eeb3"
+      },
+      "historical_source_revision": null
+    },
+    {
+      "stage": "connection_failure",
+      "event": null,
+      "level": "ERROR",
+      "timestamp_present": true,
+      "payload_is_object": false,
+      "linkage_present": {
+        "corr_id": true,
+        "cycle_id": false,
+        "strategy_id": false,
+        "position_ticket": false,
+        "trade_id": false,
+        "order_id": false
+      },
+      "exit_fields_present": {
+        "pnl": false,
+        "exit_reason": false,
+        "entry_price": false,
+        "exit_price": false
+      },
+      "source": {
+        "file": "results/logs/backtest_2026-07-10.log",
+        "line": 13062,
+        "line_sha256": "e7690ddd5ad603b680120fa5ed18bd63b6473169eaee3e9fd7f708b741201aaf"
+      },
+      "historical_source_revision": null
+    }
+  ]
+}

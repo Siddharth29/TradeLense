@@ -1,0 +1,20 @@
+{
+  "mt5": {
+    "server": "",
+    "login": "",
+    "password": "",
+    "allow_live": false
+  },
+  "backtest": {
+    "signal_monitoring_window_minutes": 30,
+    "max_trade_duration_hours": 3,
+    "assets": ["BTCUSD", "ETHUSD"],
+    "historical_hours": 120,
+    "candle_interval_minutes": 5
+  },
+  "gpt": {
+    "api_key": "",
+    "assistant_id": ""
+  }
+}
+

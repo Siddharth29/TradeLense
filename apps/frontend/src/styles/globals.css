@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&family=Roboto+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-mono: 'Roboto Mono', monospace;
+    /* TradeLense wordmark font */
+    --font-wordmark: 'Sora', 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    /* TradeLense brand tokens (dark is the default look) — tokens.json */
+    --tl-emerald: #2ee59d;
+    --tl-emerald-profit: #22c55e;
+    --tl-emerald-deep: #17a066;
+    --tl-mark-frame: #f6f7f8; /* focus frame */
+    --tl-mark-soft: #9b9ba3;  /* blurred candles + the "trade" word */
+
+    /* Dark theme (default) */
+    --color-primary: 153 82% 35%;
+    --color-primary-foreground: 0 0% 100%;
+    --color-secondary: 240 4% 16%;
+    --color-secondary-foreground: 240 9% 97%;
+    --color-background: 240 6% 10%;
+    --color-foreground: 240 9% 97%;
+    --color-accent: 153 82% 35%;
+    --color-accent-foreground: 0 0% 100%;
+    --color-muted: 240 6% 25%;
+    --color-muted-foreground: 240 5% 65%;
+    --color-card: 240 6% 12%;
+    --color-card-foreground: 240 9% 97%;
+    --color-border: 240 6% 22%;
+    --color-input: 240 6% 18%;
+    --color-ring: 153 82% 35%;
+    --color-destructive: 0 84% 60%;
+    --color-destructive-foreground: 0 0% 100%;
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Hint browsers to render form controls in dark mode by default */
+    color-scheme: dark;
+  }
+
+  /* Light theme overrides */
+  .light {
+    --color-primary: 153 82% 35%;
+    --color-primary-foreground: 0 0% 100%;
+    --color-secondary: 0 0% 96%;
+    --color-secondary-foreground: 240 6% 10%;
+    --color-background: 0 0% 100%;
+    --color-foreground: 240 6% 10%;
+    --color-accent: 153 82% 35%;
+    --color-accent-foreground: 0 0% 100%;
+    --color-muted: 240 5% 90%;
+    --color-muted-foreground: 240 4% 46%;
+    --color-card: 0 0% 100%;
+    --color-card-foreground: 240 6% 10%;
+    --color-border: 240 6% 90%;
+    --color-input: 240 6% 95%;
+    --color-ring: 153 82% 35%;
+    --color-destructive: 0 72% 51%;
+    --color-destructive-foreground: 0 0% 100%;
+
+    /* Brand on paper: deeper emerald + ink frame for contrast */
+    --tl-emerald: #17a066;
+    --tl-mark-frame: #0b0c0e;
+    --tl-mark-soft: #8a9098;
+
+    /* Switch UA form control rendering to light in light theme */
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1 {
+    @apply text-3xl font-semibold;
+  }
+
+  /* Keep base typography minimal; component files style inputs/buttons */
+  label {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  /* Base styles for native form controls to look correct in dark mode */
+  input,
+  select,
+  textarea {
+    @apply bg-input text-foreground border border-border placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring;
+  }
+
+  /* Make dropdown options readable in dark mode */
+  option {
+    @apply bg-input text-foreground;
+  }
+}
+
+@layer components {
+  /* TradeLense wordmark — always one word, lowercase; "trade" muted, "lense" emerald.
+     Rendered by <Wordmark /> in components/brand/logo.tsx. */
+  .tl-wordmark {
+    font-family: var(--font-wordmark);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--tl-mark-soft);
+  }
+  .tl-wordmark .tl-lens {
+    color: var(--tl-emerald);
+  }
+
+  /* Themed range slider (config pages). Track fill is set inline via a
+     linear-gradient on the element so the filled portion follows the value. */
+  input[type='range'].ui-slider {
+    @apply h-2 w-full cursor-pointer appearance-none rounded-full border-0 p-0;
+    background: hsl(var(--color-muted));
+  }
+  input[type='range'].ui-slider:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+  /* WebKit / Blink */
+  input[type='range'].ui-slider::-webkit-slider-runnable-track {
+    @apply h-2 rounded-full;
+    background: transparent;
+  }
+  input[type='range'].ui-slider::-webkit-slider-thumb {
+    @apply h-4 w-4 appearance-none rounded-full bg-primary;
+    border: 2px solid hsl(var(--color-card));
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.35);
+    margin-top: -4px;
+    transition: transform 0.1s ease;
+  }
+  input[type='range'].ui-slider:hover::-webkit-slider-thumb {
+    transform: scale(1.15);
+  }
+  /* Firefox */
+  input[type='range'].ui-slider::-moz-range-track {
+    @apply h-2 rounded-full;
+    background: transparent;
+  }
+  input[type='range'].ui-slider::-moz-range-thumb {
+    @apply h-4 w-4 rounded-full bg-primary;
+    border: 2px solid hsl(var(--color-card));
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.35);
+    transition: transform 0.1s ease;
+  }
+  input[type='range'].ui-slider:hover::-moz-range-thumb {
+    transform: scale(1.15);
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}

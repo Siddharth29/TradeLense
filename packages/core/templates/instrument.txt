@@ -1,0 +1,4 @@
+Recent 15-minute candles: {c15}
+Recent 5-minute candles: {c5}
+Decision timestamp: {timestamp}
+

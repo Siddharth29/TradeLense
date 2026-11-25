@@ -1,0 +1,8 @@
+{
+  "name": "tradelense",
+  "private": true,
+  "scripts": {
+    "test": "npm --prefix apps/frontend test",
+    "cy:headless": "npm --prefix apps/frontend run cy:headless"
+  }
+}

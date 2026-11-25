@@ -1,0 +1,3 @@
+Analyze {asset} using only the supplied closed-market data. Explain the evidence,
+respect the requested output schema, and return no trade when evidence is weak.
+
